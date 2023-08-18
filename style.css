@@ -1,0 +1,208 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: relative;
+}
+
+/* navbar */
+.navbar{
+  background-color: #19433e;
+  width: 100vw;
+  height: 80px;
+}
+
+/* hero-section */
+.hero-section{
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)),
+            url('https://t3.ftcdn.net/jpg/03/35/00/02/360_F_335000208_XJyUUnkg2TPfrMfiHPWW9LtCvea3x46K.jpg');
+  width: 100vw;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  
+}
+
+.hero-section img{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  
+}
+.hero-content{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* color: white; */
+  color: #cbb9b9;
+  
+}
+/* mission */
+.mission{
+  padding: 50px;
+  background-color: #b99292;
+  color: white;
+  width: 100vw;
+  font-family: 'Anton', sans-serif;
+}
+.mission img{
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mission h1{
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 3px red;
+  letter-spacing: 3px;
+}
+.mission p {
+  margin: 20px auto;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Lora', serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Work Sans', sans-serif;
+  
+}
+
+/* skills */
+.skills{
+  background-color: #134e42;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  
+}
+.skills h1{
+  text-align: center;
+  text-shadow: 2px 2px 3px red;
+  letter-spacing: 3px;
+
+}
+.skills img{
+  height: 150px;
+  width: 150px;
+}
+
+/* .skills .row{
+  padding: 30px;
+} */
+
+/* carousel */
+.carousel img{
+  margin: 20px 0;
+}
+.carousel h1{
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-family: 'Anton', sans-serif;
+  text-shadow: 2px 2px 3px red;
+  letter-spacing: 3px;
+}
+.carousel h2 {
+  color: #ddd4cf;
+}
+.carousel-item img{
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+/* contact */
+.contact{
+  background-color: #1f4156;
+  height: 250px;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+.contact h1{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 3px red;
+  letter-spacing: 3px;
+}
+.contact img{
+  height: 100px;
+  width: 100px;
+}
+
+/* footer */
+footer {
+  color: white;
+  background-color: #1f0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100vw;
+} 
+footer p{
+  font-size: 20px;
+  margin: 0;
+}
+
+/* offset when clicking the menu to come to indicated */
+#mission-target,
+#skills-target,
+#contact-target {
+  position: relative;
+  top: -100px;
+}
+
+/* when the body is on the top (help of script too...) */
+/* .scroll-top .navbar {
+  background-color: transparent !important;
+} */
+
+
+/* custom media querries */
+@media screen and (max-width: 486px) {
+  .skills img{
+    height: 80px;
+    width: 80px;
+  }
+  .row img{
+    margin-top: 10px;
+  }
+  .mission img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 487px) and (max-width: 768px) {
+  .row img {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+  .skills .row img {
+    margin-top: 50px;
+  }
+  /* .hero-section img{
+    height: 350px;
+    width: 350px;
+    border-radius: 300px;
+  } */
+}
