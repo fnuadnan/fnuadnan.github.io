@@ -96,6 +96,36 @@ body{
   height: 150px;
   width: 150px;
 }
+/* project */
+.projects{
+  background-color: rgb(65, 32, 69);
+  color: white;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  padding: 100px;
+  
+}
+.projects h1{
+  text-align: center;
+  text-shadow: 2px 2px 3px red;
+  letter-spacing: 3px;
+  padding-bottom: 70px;
+
+}
+.projects img{
+  height: 150px;
+  width: 150px;
+}
+.projects p {
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-family: fantasy;
+}
+.pr{
+  margin-top: 50px;
+}
 
 /* .skills .row{
   padding: 30px;
